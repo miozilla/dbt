@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: nyc_taxi_rides
+    description: "Processes NYC Yellow Taxi ride data"
+    columns:
+      - name: trip_id
+        description: "Unique identifier for the taxi ride"
+        tests:
+          - unique
+          - not_null
+      - name: pickup_datetime
+        description: "Timestamp when the ride started"
+      - name: dropoff_datetime
+        description: "Timestamp when the ride ended"
+      - name: passenger_count
+        description: "Total number of passengers in the taxi"
+      - name: trip_distance
+        description: "Distance traveled in miles"
+      - name: total_amount
+        description: "Total fare paid including tips"
+      - name: payment_type_desc
+        description: "Payment method used"
