@@ -1,4 +1,4 @@
-# dbt
+# dbt 🦆
 dbt : #dbt #duckdb
 
 ## In Progress..
